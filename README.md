@@ -1,9 +1,6 @@
-# EasyTutoNotes
+NoteApp:
 
-Simple notes app using Realm Database
-- Add notes
-- List notes
-- Delete notes
+ We can add a Note
+|Delete a Note on long pressing the object
+| Sorted by date
 
-Watch full tutorial :
-https://youtu.be/or_pH92l-IQ
