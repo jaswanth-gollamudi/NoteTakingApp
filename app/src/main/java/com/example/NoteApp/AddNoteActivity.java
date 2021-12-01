@@ -34,7 +34,11 @@ public class AddNoteActivity extends AppCompatActivity {
 
                 realm.beginTransaction();                      // store them in a model class
                 Note note = realm.createObject(Note.class);
-                note.setTitle(title);
+                if(title.isEmpty() && description.length()>10){
+                    note.setTitle(description.substring(0,10));
+                }else{
+                    note.setTitle(title);
+                }
                 note.setDescription(description);
                 note.setCreatedTime(createdTime);
                 realm.commitTransaction();
